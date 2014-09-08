@@ -6,3 +6,5 @@ the padding.
 
 Since this is mostly for personal use and I'm lazy I don't plan to publish this to the IntelliJ
 Plugin repo.
+
+[**Download**](https://raw.githubusercontent.com/casidiablo/dharma/master/dharma.jar)
