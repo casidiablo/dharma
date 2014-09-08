@@ -12,7 +12,6 @@ public class Focused implements ApplicationComponent {
     private EditorFactoryListener li;
 
     public void initComponent() {
-        System.out.println("Focused.initComponent()");
         li = new EditorListener();
         Disposable disposable = new Disposable() {
             @Override
