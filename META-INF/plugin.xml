@@ -1,0 +1,37 @@
+<idea-plugin version="2">
+    <id>dharma.plugin</id>
+    <name>Dharma</name>
+    <version>0.1</version>
+    <vendor email="a.sheboltaev@gmail.com" url="https://github.com/asheb">Alexander Sheboltaev
+    </vendor>
+
+    <description><![CDATA[
+      Distraction-mode things are planned, but now only a code centering feature is here.<br>
+      Use it with <a href="http://plugins.jetbrains.com/plugin?pr=idea_ce&pluginId=7137">Fullscreen</a> plugin.
+      ]]></description>
+
+    <change-notes><![CDATA[
+      2012-03-31 Code centering implemented.
+      ]]>
+    </change-notes>
+
+    <idea-version since-build="131"/>
+
+    <extensions defaultExtensionNs="com.intellij"/>
+
+    <application-components>
+        <component>
+            <implementation-class>dharma.Focused</implementation-class>
+        </component>
+    </application-components>
+
+    <project-components/>
+
+    <actions>
+        <action id="dharma.focused" class="dharma.FocusedMode"
+                text="Toggle Focused Mode" description="Toggles focused mode">
+            <add-to-group group-id="ViewMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl F11"/>
+        </action>
+    </actions>
+</idea-plugin>
